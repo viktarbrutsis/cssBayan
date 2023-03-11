@@ -1,11 +1,9 @@
 * {
    font-family: Georgia, 'Times New Roman', Times, serif;
-   font-size: 16px;
+   font-size: 24px;
    margin: 0 auto;
 }
-.part {
-   cursor: pointer;
-}
+
 .close {
    width: 35px;
    height: 35px;
@@ -25,12 +23,20 @@ img {
 .bayan-body {
    display: none;
    margin: 0 auto;
+   margin-top: 25px;
 }
-.part {
+.part1, .part2, .part3, .part4, .part5 {
+   cursor: pointer;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    padding: 25px 40px;
+}
+.part-descr {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 .divider {
    margin-top: 30px;
@@ -39,6 +45,12 @@ img {
    height: 2px;
    background-color:bisque;
 }
-#mem1 {
-   color: blue;
+.part1:hover .bayan-body{
+   /* color: red; */
+   transition: 0.8s ease-out;
+   display: block;
+}
+.part1:hover .part-close1 .close{
+   transition: 0.8s ease-out;
+   transform: rotate(45deg);
 }
