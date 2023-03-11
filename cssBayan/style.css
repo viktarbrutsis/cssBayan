@@ -3,6 +3,13 @@
    font-size: 16px;
    margin: 0 auto;
 }
+.part {
+   cursor: pointer;
+}
+.close {
+   width: 35px;
+   height: 35px;
+}
 
 img {
    width: 100px;
@@ -11,11 +18,12 @@ img {
 }
 .bayan-wrapper {
    /*margin: 0 auto;*/
-   max-width: 819px;
+   /* max-width: 819px; */
    padding: 50px 25px;
    background-color: azure;
 }
 .bayan-body {
+   display: none;
    margin: 0 auto;
 }
 .part {
@@ -25,9 +33,12 @@ img {
    padding: 25px 40px;
 }
 .divider {
-   margin-top: 10px;
-   margin-bottom: 10px;
+   margin-top: 30px;
+   margin-bottom: 30px;
    width: 100%;
    height: 2px;
    background-color:bisque;
+}
+#mem1 {
+   color: blue;
 }
