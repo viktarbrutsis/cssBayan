@@ -86,21 +86,21 @@
    }
 }
 @media(hover:hover) {
-   .part2-descr:hover .close,
-   .part3-descr:hover .close,
-   .part4-descr:hover .close,
-   .part5-descr:hover .close
+   .part2-descr:focus .close,
+   .part3-descr:focus .close,
+   .part4-descr:focus .close,
+   .part5-descr:focus .close
    {
       transform: rotate(45deg);
    }
-   .part2-descr:hover .mem2,
-   .part3-descr:hover .mem3,
-   .part4-descr:hover .mem4,
-   .part5-descr:hover .mem5 {
+   .part2-descr:focus .mem2,
+   .part3-descr:focus .mem3,
+   .part4-descr:focus .mem4,
+   .part5-descr:focus .mem5 {
       transition: all 0.8s;
       height: 200px;
    }
-   .part1-descr:hover .mem1 {
+   .part1-descr:focus .mem1 {
       transition: all 0.8s;
       transform: rotate(90deg);
    }
