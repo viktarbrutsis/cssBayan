@@ -2,6 +2,7 @@
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 34px;
    margin: 0 auto;
+   transition: all 0.8s;
 }
 .input-click {
    display: none;
@@ -29,19 +30,25 @@
 .part1-descr .close {
    transform: rotate(45deg);
 }
-.mem2 {
-   display: none;
-   margin: 0 auto;
+.mem2,
+.mem2,
+.mem3,
+.mem4,
+.mem5 {
+   height: 0;
 }
-.part1-descr, .part2-descr {
+.part1-descr,
+.part2-descr,
+.part3-descr,
+.part4-descr,
+.part5-descr {
    width: 100%;
-   transition: 0.8s ease-out;
-}
-.part1-descr, .part2-descr {
+   transition: all 0.8s;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   overflow: hidden;
 }
 .label-wrapper {
    width: 100%;
@@ -50,15 +57,44 @@
    align-items: center;
    cursor: pointer;
 }
-.part2-descr:hover .close {
+.part2-descr:hover .close,
+.part3-descr:hover .close,
+.part4-descr:hover .close,
+.part5-descr:hover .close
+ {
    transform: rotate(45deg);
 }
-.part2-descr:hover .mem2 {
-   transition: 0.8s all;
-   display: block;
+.part2-descr:hover .mem2,
+.part3-descr:hover .mem3,
+.part4-descr:hover .mem4,
+.part5-descr:hover .mem5 {
+   transition: all 0.8s;
+   height: 200px;
 }
 .part1-descr:hover .mem1 {
+   transition: all 0.8s;
    transform: rotate(90deg);
+}
+@media(max-width: 320px) {
+   .part-text {
+      font-size: 20px;
+   }
+   .close {
+      width: 25px;
+      height: 25px;
+      transition: 0.8s ease-out;
+   }
+   .bayan-body-img {
+      width: 150px;
+      height: 150px;
+   }
+   .part2-descr:hover .mem2,
+   .part3-descr:hover .mem3,
+   .part4-descr:hover .mem4,
+   .part5-descr:hover .mem5 {
+      transition: all 0.8s;
+      height: 150px;
+   }
 }
 
 
