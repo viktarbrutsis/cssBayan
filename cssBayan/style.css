@@ -50,7 +50,7 @@
    align-items: center;
    overflow: hidden;
 }
-.label-wrapper {
+.div-wrapper {
    width: 100%;
    display: flex;
    justify-content: space-between;
